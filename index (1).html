@@ -10,35 +10,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Retell AI Chat Widget -->
-    <!-- 
-    IMPORTANT: To enable the Retell AI chat widget:
-    1. Go to https://dashboard.retellai.com
-    2. Get your Public Key from Settings → API Keys
-    3. Get your Chat Agent ID from the Agents section
-    4. Replace YOUR_RETELL_PUBLIC_KEY and YOUR_CHAT_AGENT_ID below
-    5. Uncomment the script by removing the comment tags
-    
-    For now, the demo chat interface will work without this widget.
-    -->
-    <!--
+    <!-- Retell AI Widget Script -->
     <script
-    id="retell-widget"
-    src="https://dashboard.retellai.com/retell-widget-v2.js"
-    type="module"
-    data-public-key="public_key_865a78d0d209b23bebb25"
-    data-agent-id="agent_c57fbf46a6e3d8ed72c2ad9cc2"
-    data-title="Chat with Bookify"
-    data-color="#00ff94"
-    data-theme-color="#0a0a0a"
-    data-component-color="#00ff94"
-    data-fab-text="Need help booking?"
-    data-bot-name="Bookify Assistant"
-    data-popup-message="Hi! I'm here to help you book appointments. How can I assist you today?"
-    data-show-ai-popup="true"
-    data-show-ai-popup-time="5"
-></script>
-    -->
+        id="retell-widget"
+        src="https://dashboard.retellai.com/retell-widget-v2.js"
+        type="module"
+        data-public-key="YOUR_RETELL_PUBLIC_KEY"
+        data-agent-id="YOUR_CHAT_AGENT_ID"
+        data-voice-public-key="YOUR_VOICE_PUBLIC_KEY"
+        data-voice-agent-id="YOUR_VOICE_AGENT_ID"
+        data-agent-version="0"
+        data-title="Bookify Assistant"
+        data-bot-name="Bookify"
+        data-color="#00ff94"
+        data-fab-text="Chat with Bookify"
+        data-auto-open="false"
+    ></script>
 </head>
 <body>
     <!-- Header -->
@@ -239,14 +226,6 @@
                     </div>
                 </div>
             </div>
-            
-            <!-- Note about Retell AI Widget -->
-            <div class="demo-note">
-                <p style="text-align: center; margin-top: 40px; padding: 20px; background: rgba(0, 255, 148, 0.1); border-radius: 12px; border: 1px solid rgba(0, 255, 148, 0.2);">
-                    💡 <strong>Demo Chat:</strong> Try the chat interface above to see how AI booking works! <br>
-                    <em>To enable the live Retell AI widget (green button), add your API keys in index.html - see SETUP_GUIDE.md</em>
-                </p>
-            </div>
         </div>
     </section>
 
@@ -278,7 +257,7 @@
                         <li>Standard analytics</li>
                     </ul>
                     
-                    <a href="https://cal.com/azeen-afzal-enqrls/15min" target="_blank" class="btn btn-outline btn-full">Get started free</a>
+                    <button class="btn btn-outline btn-full">Get started free</button>
                 </div>
                 
                 <!-- Pro Plan -->
@@ -302,7 +281,7 @@
                         <li>Priority email support</li>
                     </ul>
                     
-                    <a href="https://cal.com/azeen-afzal-enqrls/15min" target="_blank" class="btn btn-primary btn-full">Start 14-day trial</a>
+                    <button class="btn btn-primary btn-full">Start 14-day trial</button>
                 </div>
                 
                 <!-- Enterprise Plan -->
@@ -325,7 +304,7 @@
                         <li>SLA guarantee</li>
                     </ul>
                     
-                    <a href="https://cal.com/azeen-afzal-enqrls/15min" target="_blank" class="btn btn-outline btn-full">Talk to Sales</a>
+                    <button class="btn btn-outline btn-full">Talk to Sales</button>
                 </div>
             </div>
         </div>
